@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\MisLoanImportController;
+
+Route::get('/import-loan', [MisLoanImportController::class, 'index'])->name('import-page');
+Route::post('/import-loan', [MisLoanImportController::class, 'import'])->name('import-post');
+
 Route::get('/', function () {
     return view('ecommerce');
 });

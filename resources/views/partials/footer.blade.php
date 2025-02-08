@@ -1,12 +1,5 @@
 <footer class="footer-area bg-white text-center rounded-top-7">
     <p class="fs-14">
-        © <span class="text-primary-div">Trezo</span> is Proudly
-        Owned by
-        <a
-            href="https://envytheme.com/"
-            target="_blank"
-            class="text-decoration-none text-primary"
-            >EnvyTheme</a
-        >
+        © <span class="text-primary-div">PT BPR Serang (Perseroda)</span> dikembangkan pada tahun 2024 - 2025
     </p>
 </footer>
