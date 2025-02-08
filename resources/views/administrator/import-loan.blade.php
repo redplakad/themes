@@ -7,6 +7,7 @@
         <title>PT BPR SERANG - Import Data Nominatif Kredit</title>
         <!-- Styles -->
         @include('partials.styles')
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="boxed-size">
         @include('partials.preloader')
@@ -20,7 +21,7 @@
 
 				<div class="main-content-container overflow-hidden">
                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
-                        <h3 class="mb-0">Import Data Kredit</h3>
+                        <h3 class="mb-0">Import Data Nominatif Kredit</h3>
 
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb align-items-center mb-0 lh-1">
@@ -42,7 +43,7 @@
                             <div class="card-body p-4">
                                 <div class="tab-content" id="myTab2Content">
                                     <div class="tab-pane fade show active" id="preview2-tab-pane" role="tabpanel" aria-labelledby="preview2-tab" tabindex="0">
-                                        <form action="{{ route('import-post') }}" method="post">
+                                        <form action="{{ route('import-post') }}" method="post" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group mb-4">
                                                 <label class="label text-secondary">Data Date</label>
