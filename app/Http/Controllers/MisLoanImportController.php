@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Validator;
 
 class MisLoanImportController extends Controller
 {
+    
+    public function index()
+    {
+        return view('administrator.import-loan');
+    }
+    
     public function import(Request $request)
     {
         // Validasi request
